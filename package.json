@@ -1,0 +1,17 @@
+{
+  "name": "automationtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "GoogleSearch": "npx playwright test /tests/GoogleSearch.spec.ts --headed",
+    "GoogleSearchLoop": "npx playwright test /tests/GoogleSearchLoop.spec.ts --headed"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1"
+  }
+}
