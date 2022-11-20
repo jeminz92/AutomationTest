@@ -31,7 +31,7 @@ test('test',async ({page}) => {
    //set some sleep statment
    await page.waitForTimeout(3000)
    //capture the test and print out the search number
-   let searchResult = await page.locator("xpath=//*[@id='result-stats']").textContent()
+   let searchResult = await page.locator("xpath=//*[@id='result-stats']").textContent({timeout: 5000})
    //print out the result
    //console.log("Search Result: " + searcResult)
    let arrayResult = searchResult.split(" ")
